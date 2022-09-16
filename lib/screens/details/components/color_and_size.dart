@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ecommerce/models/Product.dart';
 
-
 import '../../../constants.dart';
 
 class ColorAndSize extends StatelessWidget {
@@ -17,35 +16,14 @@ class ColorAndSize extends StatelessWidget {
     return Row(
       children: <Widget>[
         Expanded(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: <Widget>[
-              const Text("Color"),
-              Row(
-                children: const<Widget>[
-                  ColorDot(
-                    color: Color(0xFF356C95),
-                    isSelected: true,
-                  ),
-                  ColorDot(color: Color(0xFFF8C078)),
-                  ColorDot(color: Color(0xFFA29B9B)),
-                ],
-              ),
-            ],
-          ),
-        ),
-        Expanded(
           child: RichText(
             text: TextSpan(
               style: const TextStyle(color: kTextColor),
               children: [
-                const TextSpan(text: "Size\n"),
+                const TextSpan(text: "Talle\n"),
                 TextSpan(
-                  text: "${product.size} cm",
-                  style: Theme.of(context)
-                      .textTheme
-                      .headline5
-                      ?.copyWith(fontWeight: FontWeight.bold),
+                  text: "${product.size} ",
+                  style: Theme.of(context).textTheme.headline5?.copyWith(),
                 )
               ],
             ),

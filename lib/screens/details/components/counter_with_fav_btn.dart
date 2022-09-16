@@ -15,7 +15,7 @@ class CounterWithFavBtn extends StatelessWidget {
       children: <Widget>[
         const CartCounter(),
         Container(
-          padding:const EdgeInsets.all(8),
+          padding: const EdgeInsets.all(8),
           height: 32,
           width: 32,
           decoration: const BoxDecoration(

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_ecommerce/models/Product.dart';
 
-
 import '../../../constants.dart';
 
 class ItemCard extends StatelessWidget {
@@ -22,14 +21,10 @@ class ItemCard extends StatelessWidget {
         children: <Widget>[
           Expanded(
             child: Container(
-              padding: const EdgeInsets.all(20.0),
-              // For  demo we use fixed height  and width
-              // Now we dont need them
-              // height: 180,
-              // width: 160,
+              padding: const EdgeInsets.all(5.0),
               decoration: BoxDecoration(
                 color: product!.color,
-                borderRadius: BorderRadius.circular(16),
+                borderRadius: BorderRadius.circular(5),
               ),
               child: Hero(
                 tag: "${product!.id}",
@@ -40,9 +35,8 @@ class ItemCard extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.symmetric(vertical: kDefaultPaddin / 4),
             child: Text(
-              // products is out demo list
               product!.title,
-              style: const TextStyle(color: kTextLightColor),
+              style: const TextStyle(color: kTextColor),
             ),
           ),
           Text(

@@ -4,7 +4,6 @@ import 'package:flutter_ecommerce/models/Product.dart';
 import 'package:flutter_ecommerce/screens/details/components/body.dart';
 import 'package:flutter_svg/svg.dart';
 
-
 class DetailsScreen extends StatelessWidget {
   final Product product;
 
@@ -12,7 +11,6 @@ class DetailsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // each product have a color
       backgroundColor: product.color,
       appBar: buildAppBar(context),
       body: Body(product: product),
@@ -23,21 +21,25 @@ class DetailsScreen extends StatelessWidget {
     return AppBar(
       backgroundColor: product.color,
       elevation: 0,
-      leading: IconButton(
-        icon: SvgPicture.asset(
-          'assets/icons/back.svg',
-          color: Colors.white,
-        ),
-        onPressed: () => Navigator.pop(context),
-      ),
+      leading: const BackButton(color: Colors.black),
       actions: <Widget>[
         IconButton(
           icon: SvgPicture.asset("assets/icons/search.svg"),
-          onPressed: () {},
+          onPressed: () {
+            ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
+                duration: Duration(milliseconds: 450),
+                padding: EdgeInsets.only(left: 100),
+                content: Text("Coming Soon in version 2.0!!!")));
+          },
         ),
         IconButton(
           icon: SvgPicture.asset("assets/icons/cart.svg"),
-          onPressed: () {},
+          onPressed: () {
+            ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
+                duration: Duration(milliseconds: 450),
+                padding: EdgeInsets.only(left: 100),
+                content: Text("Coming Soon in version 2.0!!!")));
+          },
         ),
         const SizedBox(width: kDefaultPaddin / 2)
       ],
