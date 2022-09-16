@@ -1,16 +1,12 @@
 # flutter_ecommerce
 
-A new Flutter project.
+Proyecto final del curso "Programación de Aplicaciones Mobile con Flutter", autor: Paul Almanza. 
 
-## Getting Started
+Profesores: Dante Panella, Rosana Cespedes.
 
-This project is a starting point for a Flutter application.
+App con Login, Pantalla de Registro, y pantalla principal con manejo de productos. Incluye conceptos como Theming, Field Validations, Navigation, Provider, Snackbars, Arquitectura organizada separando modelo vistas y logica, y manejo de Assets SVG y PNG. 
 
-A few resources to get you started if this is your first Flutter project:
+Instructions> Project was uploaded after performing a Flutter Clean command, to avoid uploading several unnecesary files.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Run FlutteR Pub Get to install dependencies and it should be ready to go.
+ 
